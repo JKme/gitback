@@ -39,7 +39,7 @@ class GitBack(threading.Thread):
 			target = requests.get(url + '/.git/objects/' + self.sha1[:2] + '/' + self.sha1[2:],
 									headers=header, stream=True, allow_redirects=False, timeout=2)
 			self.lock.acquire()
-			print 'the size is {}'.format(self.size/1000000)
+			print 'the size is {}M'.format(self.size/1000000)
 			print 'the status_code {}'.format(target.status_code)
 			self.lock.release()
 			if target.status_code in [302, 404]:
