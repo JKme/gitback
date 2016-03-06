@@ -15,6 +15,6 @@ https://github.com/lijiejie/GitHack 整个代码是复制liejiejie的githack.py
 * 因为程序在requests里面设置了不允许跳转，所以`./gitback.py http://website.com` 和 `./gitback.py http://www.website.com` 结果是不同的。最简单的就是打开浏览器，看看那个网址能访问`http://weisite.com/.git/config`，能访问的就可以使用脚本下载。
 * 如果要设定代理的话，直接在requests里面添加即可`proxies = {'http': 'http://127.0.0.1:1080'}`
 
-## Thanks ## 
+## Thanks 
 * 程序基本是从lijiejie的[githack](https://github.com/lijiejie/GitHack)复制过来的，我只是在使用的时候发现小问题。
 * 另外使用了sbp的gin解析库[gin - a Git index file parser](https://github.com/sbp/gin)。
