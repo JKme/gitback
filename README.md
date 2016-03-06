@@ -1,5 +1,5 @@
 # gitback
-githack改良版本
+
 https://github.com/lijiejie/GitHack 整个代码是复制liejiejie的githack.py
 与之不同的地方在于以下几点：
 * 添加了options可以选择线程大小，默认5线程
