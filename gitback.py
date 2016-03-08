@@ -37,7 +37,7 @@ class GitBack(threading.Thread):
 		global domain
 		try:
 			target = requests.get(url + '/.git/objects/' + self.sha1[:2] + '/' + self.sha1[2:],
-									headers=header, stream=True, allow_redirects=False, timeout=2)
+									headers=header, stream=True, allow_redirects=False, timeout=20)
 			self.lock.acquire()
 			print 'the size is {}M'.format(self.size/1000000)
 			print 'the status_code {}'.format(target.status_code)
